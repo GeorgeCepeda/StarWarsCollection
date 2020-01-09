@@ -98,4 +98,22 @@ public class Film {
     public String getUrl() {
         return url;
     }
+
+    public Film clone(){
+        Film tmp = new Film(this.title,
+        this.episode_id,
+        this.opening_crawl,
+        this.director,
+        this.producer,
+        this.release_date,
+        this.characters,
+        this.planets,
+        this.starships,
+        this.vehicles,
+        this.species,
+        this.created,
+        this.edited,
+        this.url);
+        return tmp;
+    }
 }
