@@ -89,7 +89,7 @@ public class MainActivity extends FragmentActivity implements TitleListFragmentF
         tFrag = new TitleListFragmentFragment(movieInfo);
         mFragManager = (FragmentManager)getSupportFragmentManager();
         FragmentTransaction tAct = mFragManager.beginTransaction();
-        tAct.add(R.id.pHolder2,tFrag);
+        tAct.add(R.id.pHolder,tFrag);
         tAct.commit();
 
         mFragManager.addOnBackStackChangedListener(new FragmentManager.OnBackStackChangedListener() {
